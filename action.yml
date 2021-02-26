@@ -1,0 +1,16 @@
+name: 'setup-eggs'
+description: 'setup eggs for your workflow'
+author: 'Daniel Richter'
+inputs:
+  version:
+    description: 'The version of eggs to use'
+    required: false
+  token:
+    description: 'Your nest.land token'
+    required: true
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+branding:
+  icon: 'package'
+  color: 'orange'
